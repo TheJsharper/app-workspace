@@ -5,6 +5,26 @@
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
 {
+
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/webapp/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/webapp/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/webapp/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/header-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/header-lib/tsconfig.spec.json"
+    },
+    {
+      "path": "../contact-app/src/app/tsconfig.lib.json"
+    }
+]
 }

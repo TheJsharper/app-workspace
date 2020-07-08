@@ -204,6 +204,46 @@
           }
         }
       }
+    },
+    "game-lib":{
+      "projectType": "library",
+      "root": "../angular-ball-canvas/src/game",
+      "sourceRoot": "../angular-ball-canvas/src/game",
+      "prefix": "wa",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "../angular-ball-canvas/src/game/tsconfig.lib.json",
+            "project": "../angular-ball-canvas/src/game/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/header-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/header-lib/src/test.ts",
+            "tsConfig": "projects/header-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/header-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/header-lib/tsconfig.lib.json",
+              "projects/header-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "webapp"

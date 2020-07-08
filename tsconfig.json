@@ -25,6 +25,9 @@
     },
     {
       "path": "../contact-app/src/app/tsconfig.lib.json"
+    },
+    {
+      "path": "../angular-ball-canvas/src/game/tsconfig.lib.json"
     }
 ]
 }

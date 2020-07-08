@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HeaderLibModule} from 'header-lib';
 import {AppContactModule} from "contact-lib";
+import {AppGameModule} from "game-lib";
 //import {} from ''
 
 @NgModule({
@@ -20,6 +21,7 @@ import {AppContactModule} from "contact-lib";
     AppRoutingModule,
     HeaderLibModule,
    AppContactModule,
+   AppGameModule,
    BrowserAnimationsModule
   ],
   providers: [],

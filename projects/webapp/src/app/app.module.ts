@@ -1,4 +1,5 @@
-
+import { metaReducers } from './store/app.reducers';
+import {StoreModule} from'@ngrx/store';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -7,6 +8,9 @@ import { AppGameModule } from "game-lib";
 import { HeaderLibModule } from 'header-lib';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {TodosModule, reducers} from 'todos-lib';
+import { environment } from '../environments/environment';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
  
 
 
@@ -23,6 +27,9 @@ import { AppComponent } from './app.component';
    AppContactModule,
    AppGameModule,
    //NgrxComparisonModule,
+   TodosModule,
+   StoreModule.forRoot(reducers,{ metaReducers}, ),
+   !environment.production ? StoreDevtoolsModule.instrument() : [],
    BrowserAnimationsModule
   ],
   providers: [],

@@ -28,6 +28,9 @@
       ],
       "ngrx-comparison-lib":[
         "../redux-basic/src/app/ngrx-comparison"
+      ],
+      "todos-lib":[
+        "../todoapp/src/app/todos"
       ]
     }
   },

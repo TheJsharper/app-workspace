@@ -29,7 +29,6 @@
             ],
             "styles": [
               "projects/webapp/src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -257,6 +256,47 @@
             "tsConfig": "../redux-basic/src/app/ngrx-comparison/tsconfig.lib.json",
             "project": "../redux-basic/src/app/ngrx-comparison/ng-package.json"
           },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/header-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/header-lib/src/test.ts",
+            "tsConfig": "projects/header-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/header-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/header-lib/tsconfig.lib.json",
+              "projects/header-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "todos-lib":{
+      "projectType": "library",
+      "root": "../todoapp/src/app/todos",
+      "sourceRoot": "../todoapp/src/app/todos",
+      "prefix": "wa",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "../todoapp/src/app/todos/tsconfig.lib.json",
+            "project": "../todoapp/src/app/todos/ng-package.json"
+          },
+          "style":["node_modules/todomvc-app-css/index.css"],
           "configurations": {
             "production": {
               "tsConfig": "projects/header-lib/tsconfig.lib.prod.json"

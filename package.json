@@ -31,8 +31,9 @@
     "@ngrx/schematics": "^9.2.0",
     "@ngrx/store": "^9.2.0",
     "@ngrx/store-devtools": "^9.2.0",
-    "bootstrap": "^4.5.0",
-    "rxjs": "~6.5.5",
+    "ngrx-store-freeze": "^0.2.4",
+    "rxjs": "^6.6.0",
+    "todomvc-app-css": "^2.2.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

@@ -25,6 +25,9 @@
       ],
       "game-lib":[
         "../angular-ball-canvas/src/game"
+      ],
+      "ngrx-comparison-lib":[
+        "../redux-basic/src/app/ngrx-comparison"
       ]
     }
   },

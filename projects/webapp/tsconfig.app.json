@@ -10,13 +10,15 @@
     "src/polyfills.ts",
     "../header-lib/src/index.ts",
     "../../../contact-app/src/app/contacts/index.ts",
-    "../../../angular-ball-canvas/src/game/index.ts"
+    "../../../angular-ball-canvas/src/game/index.ts",
+    "../../../redux-basic/src/app/ngrx-comparison/index.ts"
   ],
   "include": [
     "src/**/*.d.ts",
     "../header-lib/src/*.ts",
     "../../../contact-app/src/app/contacts/*.ts",
-    "../../../angular-ball-canvas/src/game/*.ts"
+    "../../../angular-ball-canvas/src/game/*.ts",
+    "../../../redux-basic/src/app/ngrx-comparison/*.ts"
   ],
   "exclude": [
     "../../../contact-app/src/app/*.spec.ts"

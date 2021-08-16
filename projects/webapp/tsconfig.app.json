@@ -9,20 +9,20 @@
     "src/main.ts",
     "src/polyfills.ts",
     "../header-lib/src/index.ts",
-    "../../../contact-app/src/app/contacts/index.ts",
+    "../../../courses/contact-app/src/app/contacts/index.ts",
     "../../../angular-ball-canvas/src/game/index.ts",
-    "../../../redux-basic/src/app/ngrx-comparison/index.ts",
-    "../../../todoapp/src/app/todos/index.ts"
+    "../../../Ngrx/redux-basic/src/app/ngrx-comparison/index.ts",
+    "../../../Ngrx/todoapp/src/app/todos/index.ts"
   ],
   "include": [
     "src/**/*.d.ts",
     "../header-lib/src/*.ts",
-    "../../../contact-app/src/app/contacts/*.ts",
+    "../../../courses/contact-app/src/app/contacts/*.ts",
     "../../../angular-ball-canvas/src/game/*.ts",
-    "../../../redux-basic/src/app/ngrx-comparison/*.ts" ,
-    "../../../todoapp/src/app/todos/index.ts"
+    "../../../Ngrx/redux-basic/src/app/ngrx-comparison/*.ts" ,
+    "../../../Ngrx/todoapp/src/app/todos/index.ts"
   ],
   "exclude": [
-    "../../../contact-app/src/app/*.spec.ts"
+    "../../../coures/contact-app/src/app/*.spec.ts"
   ]
 }

@@ -28,7 +28,7 @@
               "projects/webapp/src/assets"
             ],
             "styles": [
-              "projects/webapp/src/styles.scss",
+              "projects/webapp/src/styles.scss"
             ],
             "scripts": []
           },
@@ -166,15 +166,15 @@
     },
     "contact-lib":{
       "projectType": "library",
-      "root": "../contact-app/src/app/contacts",
-      "sourceRoot": "../contact-app/src/app/contacts",
+      "root": "../courses/contact-app/src/app/contacts",
+      "sourceRoot": "../courses/contact-app/src/app/contacts",
       "prefix": "wa",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "../contact-app/src/app/tsconfig.lib.json",
-            "project": "../contact-app/src/app/contacts/ng-package.json"
+            "tsConfig": "../courses/contact-app/src/app/tsconfig.lib.json",
+            "project": "../courses/contact-app/src/app/contacts/ng-package.json"
           },
           "configurations": {
             "production": {
@@ -286,15 +286,15 @@
     },
     "todos-lib":{
       "projectType": "library",
-      "root": "../todoapp/src/app/todos",
-      "sourceRoot": "../todoapp/src/app/todos",
+      "root": "../Ngrx/todoapp/src/app/todos",
+      "sourceRoot": "../Ngrx/todoapp/src/app/todos",
       "prefix": "wa",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "../todoapp/src/app/todos/tsconfig.lib.json",
-            "project": "../todoapp/src/app/todos/ng-package.json"
+            "tsConfig": "../Ngrx/todoapp/src/app/todos/tsconfig.lib.json",
+            "project": "../Ngrx/todoapp/src/app/todos/ng-package.json"
           },
           "style":["node_modules/todomvc-app-css/index.css"],
           "configurations": {

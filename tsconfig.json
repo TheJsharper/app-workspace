@@ -24,7 +24,7 @@
       "path": "./projects/header-lib/tsconfig.spec.json"
     },
     {
-      "path": "../contact-app/src/app/tsconfig.lib.json"
+      "path": "../courses/contact-app/src/app/tsconfig.lib.json"
     },
     {
       "path": "../angular-ball-canvas/src/game/tsconfig.lib.json"

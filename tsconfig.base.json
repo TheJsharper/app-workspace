@@ -21,16 +21,16 @@
         "projects/header-lib/src"
       ],
       "contact-lib": [
-        "../contact-app/src/app/contacts"
+        "../courses/contact-app/src/app/contacts"
       ],
       "game-lib":[
         "../angular-ball-canvas/src/game"
       ],
       "ngrx-comparison-lib":[
-        "../redux-basic/src/app/ngrx-comparison"
+        "../Ngrx/redux-basic/src/app/ngrx-comparison"
       ],
       "todos-lib":[
-        "../todoapp/src/app/todos"
+        "../Ngrx/todoapp/src/app/todos"
       ]
     }
   },

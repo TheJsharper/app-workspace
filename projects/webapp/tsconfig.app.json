@@ -3,7 +3,10 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
-    "types": []
+    "types": [],
+   // "paths": { "@angular/*": [ "../node_modules/@angular/*" ] },
+    "preserveSymlinks": true,
+    
   },
   "files": [
     "src/main.ts",
@@ -16,6 +19,8 @@
   ],
   "include": [
     "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.spec.ts",
     "../header-lib/src/*.ts",
     "../../../courses/contact-app/src/app/contacts/*.ts",
     "../../../angular-ball-canvas/src/game/*.ts",

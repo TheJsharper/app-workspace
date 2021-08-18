@@ -30,8 +30,10 @@
         "../Ngrx/redux-basic/src/app/ngrx-comparison"
       ],
       "todos-lib":[
-        "../Ngrx/todoapp/src/app/todos"
-      ]
+        "../Ngrx/todoapp/src/app/todos",
+        
+      ],
+      "@angular/*": [ "node_modules/@angular/*" ] 
     }
   },
  

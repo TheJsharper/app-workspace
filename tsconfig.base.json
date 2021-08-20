@@ -33,7 +33,9 @@
         "../Ngrx/todoapp/src/app/todos",
         
       ],
-      "@angular/*": [ "node_modules/@angular/*" ] 
+      "@angular/*": [ "node_modules/@angular/*" ],
+      
+      "@ngrx/*": ["node_modules/@ngrx/*"] 
     }
   },
  

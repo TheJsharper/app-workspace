@@ -1,4 +1,4 @@
-import { metaReducers } from './store/app.reducers';
+import { metaReducers, reducers as mainReduders } from './store/app.reducers';
 import {StoreModule} from'@ngrx/store';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,8 +27,10 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
    AppContactModule,
    AppGameModule,
    //NgrxComparisonModule,
-   TodosModule,
-   StoreModule.forRoot(reducers,{ metaReducers}, ),
+  // TodosModule,
+   StoreModule.forRoot({}/*mainReduders,{ metaReducers},*/ ),
+   //StoreModule.forFeature("todos", reducers),
+  
    !environment.production ? StoreDevtoolsModule.instrument() : [],
    BrowserAnimationsModule
   ],
